@@ -4,6 +4,8 @@ _site
 .jekyll-metadata
 vendor
 
+_drafts
+
 # Created by https://www.toptal.com/developers/gitignore/api/emacs,macos
 # Edit at https://www.toptal.com/developers/gitignore?templates=emacs,macos
 
