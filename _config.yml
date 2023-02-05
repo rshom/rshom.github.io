@@ -18,11 +18,15 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Your awesome title
+title: Personal Page
 description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+
+  Russell Shomberg is an Ocean Systems Engineer and Graduate Student
+  at the University of Rhode Island. He currently works as a Research
+  Assistant in the [Underwater Robotics and Imaging
+  Lab](https://web.uri.edu/uril/) focussing on developing low cost
+  alternatives to traditional ocean research tools.
+
 domain: rshom.github.io
 url: https://rshom.github.io
 baseurl: /		
