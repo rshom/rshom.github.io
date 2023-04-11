@@ -7,4 +7,4 @@ categories: academic writing
 
 I created a template project for academic writing. 
 
-https://github.com/rshom/academic-writing-kit
+[https://github.com/rshom/academic-writing-kit](https://github.com/rshom/academic-writing-kit)
