@@ -3,7 +3,7 @@ layout: home
 title: Home
 ---
 
-<!-- About -->
+<!-- ## About ## -->
 
 I am a ocean systems engineer and researcher at University of Rhode
 Island. This site exists as a platform to consolidate and showcase
@@ -16,3 +16,6 @@ Scholar](https://scholar.google.com/citations?user=8ZeEhYYAAAAJ&hl=en)
 for a full list of publication.
 
 
+<!-- ## Projects ## -->
+
+<!-- ## Fun ## -->
