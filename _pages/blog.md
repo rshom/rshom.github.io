@@ -1,7 +1,7 @@
 ---
-permalink: /archive
-layout: page
-title: Archive
+permalink: /blog
+layout: blog
+title: Blog
 ---
 
 

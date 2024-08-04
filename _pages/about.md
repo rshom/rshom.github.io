@@ -7,6 +7,8 @@ redirect_from:
   - /about.html
 ---
 
+<!--  -->
+
 Russell Shomberg is a Ocean Systems Engineer. His research develops
 SWAP-C limited alternatives to traditional marine robotics to promote
 global accessibility of scientific research.

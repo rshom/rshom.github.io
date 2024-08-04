@@ -23,7 +23,8 @@ minima:
 
 header_pages:
   - _pages/about.md
-  - _pages/archive.md
+  #- _pages/blog.md
+  #- _pages/archive.md
 
 include:
     - _pages
