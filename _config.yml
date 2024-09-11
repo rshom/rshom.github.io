@@ -2,32 +2,43 @@ title: Russ Shomberg
 description: >- # this means to ignore newlines until "baseurl:"
 
   Ocean Systems Engineer
-author: "Russ Shomberg"
 
-theme: minima
-
-domain: rshom.github.io
-url: https://rshom.github.io
 baseurl: /
 repository: rshom/rshom.github.io
+
+author: "Russ Shomberg"
+theme: minima
+domain: rshom.github.io
+url: https://rshom.github.io
 
 #twitter_username: russellshomberg
 github_username:  rshom
 linkedin_username: rshomberg
+# TODO: include email
 
 # Minima: show excerpts in the frontpage
-show_excerpts: true
+#show_excerpts: true
+page_excerpts: true
+excerpt_separator: "\n\n"
 
 minima:
   date_format: "%Y-%m-%d"
 
 header_pages:
   - _pages/about.md
+  - _pages/work.md
+  #- _pages/fun.md
   #- _pages/blog.md
   #- _pages/archive.md
 
 include:
     - _pages
+    - _projects
+
+collections:
+  projects:
+    output: true
+    sort_by: date
 
 exclude: 
     - .gitignore
