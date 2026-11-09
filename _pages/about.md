@@ -28,7 +28,7 @@ Officer in the US Navy.
 
 ## Research
 
-- **Polar ice reconstruction.** Aerial and underwater imagery and sonar
+- **Polar ice reconstruction** ([NeRFBerg]({{ '/nerfberg' | relative_url }})). Aerial and underwater imagery and sonar
   of icebergs and sea ice ridges, reconstructed in 3D with neural
   radiance fields (NeRF) and Gaussian splatting. Field work in Greenland
   and the Antarctic Peninsula, plus air-deployed ice buoys with the
