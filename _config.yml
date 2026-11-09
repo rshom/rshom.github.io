@@ -1,73 +1,62 @@
 title: Russ Shomberg, PhD
-description: >- # this means to ignore newlines until "baseurl:"
-
-  Ocean Systems Engineer
-
-baseurl: /
-repository: rshom/rshom.github.io
-
-author: "Russ Shomberg"
-theme: minima
-domain: rshom.github.io
+description: >-
+  Marine robotics engineer at the University of Rhode Island developing
+  low-cost sensing and data tools for oceanographic and polar research.
+author: Russ Shomberg
+email: rshomberg@uri.edu
 url: https://rshom.github.io
+baseurl: ""
+repository: rshom/rshom.github.io
+lang: en_US
+logo: /assets/img/shomberg.jpg
 
-#twitter_username: russellshomberg
-github_username:  rshom
+theme: minima
+github_username: rshomberg-uri
 linkedin_username: rshomberg
-# TODO: include email
-
-# Minima: show excerpts in the frontpage
-#show_excerpts: true
-page_excerpts: true
-excerpt_separator: "\n\n"
 
 minima:
   date_format: "%Y-%m-%d"
 
+# Nav order. Work, Blog, and Play come back as their content is ready.
 header_pages:
   - _pages/about.md
-  - _pages/work.md
-  #- _pages/fun.md
-  #- _pages/blog.md
-  #- _pages/archive.md
+  - _pages/publications.md
+  - _pages/cv.md
 
 include:
-    - _pages
-    - _projects
+  - _pages
 
 collections:
   projects:
     output: true
     sort_by: date
 
-exclude: 
-    - .gitignore
-    - docker-compose.yml
-    - Gemfile
-    - Gemfile.lock
-    - LICENSE
-    - README.md
+# Projects and posts stay hidden until each one is ready.
+# Set `published: true` in a page's front matter to put it live.
+defaults:
+  - scope:
+      path: ""
+      type: projects
+    values:
+      layout: project
+      published: false
+  - scope:
+      path: ""
+      type: posts
+    values:
+      published: false
 
-# Build settings
 plugins:
   - jekyll-feed
+  - jekyll-seo-tag
 
-# Exclude from processing.
-# The following items will not be processed, by default.
-# Any item listed under the `exclude:` key here will be automatically added to
-# the internal "default list".
-#
-# Excluded items can be processed by explicitly listing the directories or
-# their entries' file path in the `include:` list.
-#
-# exclude:
-#   - .sass-cache/
-#   - .jekyll-cache/
-#   - gemfiles/
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules/
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
+# A custom exclude list replaces Jekyll's defaults, so vendor/ etc. are listed here.
+exclude:
+  - .gitignore
+  - .bundle/
+  - vendor/
+  - Gemfile
+  - Gemfile.lock
+  - LICENSE
+  - README.md
+  - docker-compose.yml

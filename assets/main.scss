@@ -1,0 +1,26 @@
+---
+---
+
+@import "minima";
+
+.headshot {
+  float: right;
+  width: 220px;
+  margin: 0 0 1rem 1.5rem;
+  border-radius: 4px;
+}
+
+@media (max-width: 600px) {
+  .headshot {
+    float: none;
+    display: block;
+    width: 45%;
+    margin: 0 auto 1rem;
+  }
+}
+
+.cv-embed {
+  width: 100%;
+  height: 80vh;
+  border: 1px solid #e8e8e8;
+}

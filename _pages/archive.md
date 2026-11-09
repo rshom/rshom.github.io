@@ -1,4 +1,5 @@
 ---
+published: false  # back in the nav once there is content
 permalink: /archive
 layout: page
 title: Archive

@@ -1,4 +1,5 @@
 ---
+published: false  # back in the nav once there is content
 permalink: /work
 title: "Work"
 layout: default
