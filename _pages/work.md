@@ -7,7 +7,7 @@ collection: projects
 
 <!-- TODO: make this a layout (portfolio) to be used for play as well -->
 
-<div style="display:flex; justify-content:space-between; flex-wrap:wrap">
+<div style="display:flex; justify-content:space-between; flex-wrap:wrap; direction:ltr;">
 
 {% assign project_list = site.projects | sort:"created" %}
 {% for page in project_list reversed %}
