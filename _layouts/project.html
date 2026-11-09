@@ -1,30 +1,40 @@
 ---
 layout: default
 ---
+{%- comment -%}
+Project pages are a link tree plus images. Front matter:
+  summary: one line
+  links:   [{label, url, note}]   url optional; note is a short plain-text tail
+  images:  [{src, caption, alt}]
+Body text, if any, prints at the bottom. Keep it short.
+{%- endcomment -%}
+<article class="project">
+  <h1>{{ page.title }}</h1>
+  {%- if page.summary %}
+  <p class="project-summary">{{ page.summary }}</p>
+  {%- endif %}
 
-<style>
-  img {
-      width: 100%;
-  }
+  {%- if page.links %}
+  <ul class="project-links">
+    {%- for l in page.links %}
+    <li>
+      {%- if l.url %}<a href="{{ l.url }}">{{ l.label }}</a>{% else %}{{ l.label }}{% endif -%}
+      {%- if l.note %} <span class="project-note">{{ l.note }}</span>{% endif -%}
+    </li>
+    {%- endfor %}
+  </ul>
+  {%- endif %}
 
-  img + em {
-      text-align: justify;
-  }
+  {%- if page.images %}
+  <div class="project-gallery">
+    {%- for im in page.images %}
+    <figure>
+      <img src="{{ im.src | relative_url }}" alt="{{ im.alt | default: im.caption }}" loading="lazy">
+      {%- if im.caption %}<figcaption>{{ im.caption }}</figcaption>{% endif %}
+    </figure>
+    {%- endfor %}
+  </div>
+  {%- endif %}
 
-</style>
-
-<h1>{{ page.title }}</h1>
-
-<!-- 
-<img src="/assets/{{ page.id }}/thumbnail.png"
-     alt="{{ page.title }} thumbnail"
-     />
- -->
-
-  {{ page.excerpt }}
-
-
-<!-- TODO: scrollable gallery w/ captions -->
-
-
-{{ content | remove_first:page.excerpt }}
+  {{ content }}
+</article>
