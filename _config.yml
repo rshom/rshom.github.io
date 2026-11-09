@@ -20,6 +20,8 @@ minima:
 # Nav order. Work, Blog, and Play come back as their content is ready.
 header_pages:
   - _pages/about.md
+  - _pages/work.md
+  - _pages/blog.md
   - _pages/publications.md
   - _pages/cv.md
 

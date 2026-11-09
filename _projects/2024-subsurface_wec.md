@@ -1,40 +1,35 @@
 ---
-permalink: /2024-subsurface_wec
-updated: 2024-01-01
-created: 2024-01-01
-title: "Subsurface WEC"
-layout: project
+published: true
+permalink: /wave-powered-float
+created: 2020-06-01
+date: 2024-01-10
+updated: 2026-11-09
+title: Wave-Powered Profiling Float
+abstract: >-
+  A profiling float that stays below the surface indefinitely, controls its
+  depth, and harvests energy from wave motion, with no surface expression. A
+  heave plate couples to the near-surface wave field and a tethered pod of
+  turbines turns the relative motion into power. Simulations and tank tests
+  produced a tethered two-body design and a method for sizing it to expected
+  wave conditions. Feasibility study with Michael Jakuba and Dana Yoerger at
+  the WHOI Deep Submergence Laboratory, funded by ONR.
+research:
+  - label: "Paper: Design proposal and feasibility analysis for a near-surface wave-powered profiling float"
+    url: https://doi.org/10.3390/jmse12010137
+    note: "Journal of Marine Science and Engineering, 2024, Shomberg, Jakuba, and Yoerger"
+  - label: "Paper: Feasibility of a near-surface wave-powered profiling float for extended fully submerged autonomous deployments"
+    url: https://doi.org/10.1109/OCEANS47191.2022.9977078
+    note: "OCEANS 2022 Hampton Roads, Shomberg, Jakuba, and Yoerger"
+  - label: "Code: OceanWaveLib"
+    url: "/oceanwavelib"
+    note: "MATLAB wave time series used in the simulations"
+  - label: "Talk: Feasibility of a near-surface wave-powered profiling float"
+    note: "OCEANS 2022, Hampton Roads, VA"
+images:
+  - src: /assets/2024-subsurface_wec/concept.jpg
+    caption: The proposed float (left) and its control concept (right). The heave plate follows the waves while the pod holds depth.
+    alt: Diagram of a heave plate tethered to a ring of turbines, and a control timing sketch
+  - src: /assets/2024-subsurface_wec/tank.jpg
+    caption: Tank test rig (left) and measured against simulated pod velocity gain and turbine power (right).
+    alt: Tank test setup with labeled load cell, oscillator, tether, turbine, and pod, beside two plots
 ---
-
-Collaborating with researchers as WHOI DSL, I developed a feasibility
-study for a wave energy converter powered profiling float capable of
-depth control and energy harvesting within the near surface wave field
-with no surface expression.
-The float relies on hydrodynamic forces rather than buoyant forces and
-can theoretically remain submerged indefinitely collecting data
-undetected.
-Using simulations and tank testing, we developed a tethered two-body
-design and developed a design methodology for generating significant
-power depending on different expected wave conditions.
-This feasibility study and design methodology could be used to develop
-a prototype for further testing.
-
-The initial results were reported at OCEANS 2022[^1].
-Refined results were published in JSME[^2].
-
-This project was completed in collaboration with the Deep Submergence
-Lab at Woods Hole Oceanographic Institution
-
-[^1]: Shomberg, R.; Jakuba, M.; Yoerger, D. Design Proposal and
-	Feasibility Analysis for a Near-Surface Wave-Powered Profiling
-	Float. J. Mar. Sci. Eng. 2024, 12, 137.
-	[https://doi.org/10.3390/jmse12010137
-	](https://doi.org/10.3390/jmse12010137)
-
-[^2]: Shomberg, R., Jakuba, M., & Yoerger, D. (2022, October).
-	Feasibility of a Near-Surface Wave-Powered Profiling Float for
-	Extended Fully Submerged Autonomous Deployments. In OCEANS 2022,
-	Hampton Roads (pp. 1-10). IEEE.
-	[https://doi.org/10.1109/OCEANS47191.2022.9977078
-	](https://doi.org/10.1109/OCEANS47191.2022.9977078)
-

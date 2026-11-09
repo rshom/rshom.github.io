@@ -1,6 +1,7 @@
 ---
 permalink: /nerfberg
 created: 2026-02-01
+date: 2026-02-01
 updated: 2026-11-08
 title: NeRFBerg
 published: true

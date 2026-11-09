@@ -44,3 +44,16 @@
   height: 80vh;
   border: 1px solid #e8e8e8;
 }
+
+.work-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1.5rem;
+}
+
+.work-card {
+  display: block;
+  img, .work-noimg { width: 100%; aspect-ratio: 1; object-fit: cover; display: block; margin-bottom: 0.4rem; }
+  .work-noimg { background: #f2f2f2; color: #828282; display: flex; align-items: center; justify-content: center; text-align: center; padding: 1rem; box-sizing: border-box; }
+  .work-title { display: block; }
+}

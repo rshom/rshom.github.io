@@ -1,43 +1,17 @@
 ---
-published: false  # back in the nav once there is content
 permalink: /work
-title: "Work"
-layout: default
-collection: projects
+title: Work
+layout: page
 ---
 
-<!-- TODO: make this a layout (portfolio) to be used for play as well -->
-
-<div style="display:flex; justify-content:space-between; flex-wrap:wrap; direction:ltr;">
-
-{% assign project_list = site.projects | sort:"created" %}
-{% for page in project_list reversed %}
-
-<div style="margin-top:1%; margin-bottom:1%">
-	<center>
-	<a href=".{{ page.url }}">
-		<img style="height:320px; width:320px; display:block; margin-left:auto; margin-right:auto;" 
-		src="/assets/{{ page.id }}/thumbnail.png"
-		alt="{{ page.title }} thumbnail" />
-	</a>
-	<h4>
-		<a href=".{{ page.url }}">
-			{{ page.title }}
-		</a>
-	<!-- </h5><h5> -->
-		({{ page.updated | date: "%Y"}}) 
-	</h4>
-	</center>
-	<!-- 
-	<p>
-		{{ page.excerpt }}
-	</p>
-	 -->
+{%- assign project_list = site.projects | sort: "date" | reverse %}
+<div class="work-grid">
+{%- for p in project_list %}
+  {%- assign thumb = p.thumbnail | default: p.images[0].src %}
+  <a class="work-card" href="{{ p.url | relative_url }}">
+    {%- if thumb %}<img src="{{ thumb | relative_url }}" alt="" loading="lazy">{% else %}<div class="work-noimg">{{ p.title }}</div>{% endif %}
+    <span class="work-title">{{ p.title }}</span>
+    <span class="project-note">{{ p.date | date: "%Y" }}</span>
+  </a>
+{%- endfor %}
 </div>
-
-{% endfor %}
-
-</div>
-
-
-
