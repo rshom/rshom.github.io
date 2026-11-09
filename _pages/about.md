@@ -4,12 +4,12 @@ title: About
 layout: default
 ---
 
+# About
+
+**Marine Research Associate**, Graduate School of Oceanography, University of Rhode Island<br>
+**Adjunct Professor**, Department of Ocean Engineering, University of Rhode Island
+
 <img class="headshot" src="{{ '/assets/img/shomberg.jpg' | relative_url }}" alt="Russ Shomberg">
-
-# Russ Shomberg, PhD
-
-**Adjunct Professor**, Department of Ocean Engineering, University of Rhode Island<br>
-**Marine Research Associate**, Graduate School of Oceanography, University of Rhode Island
 
 I am a marine robotics engineer developing sensing and data tools for
 oceanographic and polar research, the local marine environment, and
