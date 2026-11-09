@@ -21,7 +21,7 @@ research:
     url: https://doi.org/10.1109/OCEANS47191.2022.9977078
     note: "OCEANS 2022 Hampton Roads, Shomberg, Jakuba, and Yoerger"
   - label: "Code: OceanWaveLib"
-    url: "/oceanwavelib"
+    url: "/blog/2021/12/21/oceanwavelib.html"
     note: "MATLAB wave time series used in the simulations"
   - label: "Talk: Feasibility of a near-surface wave-powered profiling float"
     note: "OCEANS 2022, Hampton Roads, VA"
