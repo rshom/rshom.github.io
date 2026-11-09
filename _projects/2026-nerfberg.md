@@ -11,11 +11,9 @@ drone video using neural radiance fields (NeRF). The result is an
 accurate 3D model of the iceberg, from which surface area and volume
 can be measured without anyone setting foot on the ice.
 
-![UAV over an iceberg, a photogrammetry reconstruction, and a NeRF reconstruction]({{ '/assets/2026-nerfberg/figure1.png' | relative_url }})
-*UAV imagery collected in Disko Bay, Greenland (left), reconstructed
-with traditional photogrammetry (center) and with a NeRF (right). The
-NeRF holds the iceberg's shape and captures the view-dependent glare and
-translucency of the ice.*
+![Survey boat beside an iceberg and a drone view of the same iceberg]({{ '/assets/2026-nerfberg/field.jpg' | relative_url }})
+*Field operations in Disko Bay, Greenland, June 2025: working from a
+small boat (left) and drone imagery of an iceberg (right).*
 
 ## Problem
 
@@ -42,11 +40,21 @@ moving water and sky.
    comparison of surface area, volume, Chamfer distance, and Hausdorff
    distance.
 
+![Ground truth image, dense point cloud, Poisson mesh, and neural rendering of an iceberg]({{ '/assets/2026-nerfberg/views.jpg' | relative_url }})
+*One iceberg four ways: a ground truth drone image (upper left), a
+dense point cloud (upper right), a Poisson mesh (lower left), and a
+neural rendering (lower right).*
+
 ## Result
 
 The NeRF reconstruction gave a more accurate geometry of the iceberg
 sail than SfM/MVS across every measured quantity. The full pipeline
 from drone video to measured geometry is open source.
+
+![Photogrammetry and NeRF point clouds of the same iceberg]({{ '/assets/2026-nerfberg/pointclouds.jpg' | relative_url }})
+*Point clouds of the same iceberg from photogrammetry (left) and NeRF
+(right). Photogrammetry leaves holes where the ice is bright and
+featureless. The NeRF fills the surface.*
 
 ## What Follows
 
@@ -56,6 +64,10 @@ Atlantic, including citizen science observers. Next steps are a
 comparison with Gaussian splatting, iceberg-specific models, keel data
 from sonar for complete above- and below-water geometry, and repeat
 scans to measure change over time.
+
+![Two researchers on a small boat collecting camera data beside Antarctic icebergs]({{ '/assets/2026-nerfberg/antarctica.jpg' | relative_url }})
+*Collecting simultaneous imagery and sonar of icebergs on the Antarctic
+Peninsula, January 2026.*
 
 ## Art: *Fragmented Reconstructions*
 
