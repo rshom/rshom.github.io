@@ -43,16 +43,10 @@ images:
   - src: /assets/2026-nerfberg/fig1-reconstructions.jpg
     caption: MVS (left), drone photograph (center), and NeRF (right) for icebergs 4450746 (top) and 4450743 (bottom).
     alt: Two icebergs shown as MVS reconstruction, drone photo, and NeRF reconstruction
-  - src: /assets/2026-nerfberg/field.jpg
-    caption: Small-boat operations west of Ilulissat, Disko Bay, Greenland, June 2025.
-    alt: Survey boat beside an iceberg and a drone view of an iceberg
   - src: /assets/2026-nerfberg/fig2-preprocessing.jpg
     caption: Preprocessing for iceberg 4450746. Raw drone frame, contrast enhancement (CLAHE), and CNN segmentation mask.
     alt: Raw drone frame, enhanced frame, and segmentation mask of an iceberg
   - src: /assets/2026-nerfberg/fig3-heatmap-4450746.jpg
     caption: Per-pixel color distance between reprojected meshes and the real photo, MVS (left) and NeRF (right).
     alt: Heatmaps comparing MVS and NeRF mesh reprojections to a reference photo
-  - src: /assets/2026-nerfberg/antarctica.jpg
-    caption: Imagery and sonar collection, Antarctic Peninsula, January 2026.
-    alt: Two researchers on a small boat collecting camera data beside Antarctic icebergs
 ---
