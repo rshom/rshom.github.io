@@ -14,5 +14,5 @@ categories: blog
 ![The same code on three sonars]({{ '/assets/2026-sidescanpy/three_formats.png' | relative_url }})
 *Same calls, three sonars and file writers: EdgeTech JSF, Benthos XTF (UK JNCC, Open Government Licence), and Klein XTF (USGS, public domain).*
 
-![Test images with labelled objects and detector calls]({{ '/assets/2026-sidescanpy/two_stage_test.jpg' | relative_url }})
-*The target-recognition example: a YOLO detector plus a chip classifier on held-out test images. Labels in green, calls in red and cyan by class. Images from [Santos et al. 2024](https://doi.org/10.6084/m9.figshare.24574879), CC BY 4.0.*
+![A dual-swath training tile with labelled boxes]({{ '/assets/2026-sidescanpy/swath_tile_labels.png' | relative_url }})
+*A dual-swath tile cut for annotation, with square 0.1 m pixels and example "reef" and "contact" boxes. Each box maps back to its file, ping, side, and position. USGS Grand Bay data, public domain.*

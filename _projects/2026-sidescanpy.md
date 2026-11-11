@@ -36,9 +36,9 @@ images:
   - src: /assets/2026-sidescanpy/three_formats.png
     caption: The same calls on EdgeTech JSF, Benthos XTF (UK JNCC, Open Government Licence), and Klein XTF (USGS, public domain).
     alt: Three sidescan waterfalls from three different sonars
-  - src: /assets/2026-sidescanpy/two_stage_test.jpg
-    caption: Target-recognition example, a YOLO detector plus a chip classifier on held-out test images. Labels in green, calls in red and cyan by class. Images from Santos et al. 2024 (figshare 24574879), CC BY 4.0.
-    alt: Six sonar images with green label boxes and red and cyan detection boxes
+  - src: /assets/2026-sidescanpy/swath_tile_labels.png
+    caption: A dual-swath tile cut for annotation, with square 0.1 m pixels and example "reef" and "contact" boxes. Each box maps back to its file, ping, side, and position. USGS Grand Bay data, public domain.
+    alt: Sidescan swath tile with two red labelled bounding boxes
   - src: /assets/2026-sidescanpy/jncc_wight_barfleur.png
     caption: Wight-Barfleur Reef as a ground-range waterfall and a 1 m UTM grid. UK JNCC data, Open Government Licence.
     alt: Sidescan waterfall beside a gridded map of the same line
